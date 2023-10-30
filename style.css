@@ -51,7 +51,7 @@ body {
   margin-left: 1rem;
 }
 
-p {
+.para {
   color: var(--grey);
   font-weight: 700;
   font-size: 0.8rem;
@@ -67,4 +67,34 @@ p {
 
 .list-holder {
   margin-top: 1.5rem;
+}
+
+form {
+  margin-top: 1.5rem;
+}
+
+label {
+  font-size: 0.7rem !important;
+  color: var(--slate-grey) !important;
+}
+
+#email {
+  height: 2.55rem;
+  padding: 0.8rem !important;
+  border: 1px solid var(--grey) !important;
+  border-radius: 0.4rem;
+  margin-top: 0.2rem;
+  width: 70%;
+}
+
+#submit {
+  padding: 0.6rem 1.2rem;
+  margin-top: 1.2rem;
+  background-color: var(--charcoal-grey);
+  color: white;
+  border: none;
+  border-radius: 0.4rem;
+  width: 70%;
+  height: 2.55rem;
+  cursor: pointer;
 }
