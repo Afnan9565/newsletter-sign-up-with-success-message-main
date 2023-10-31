@@ -135,7 +135,9 @@ label {
 .hide {
   display: none;
 }
-
+.show{
+  display: block;
+}
 .strong {
   color: var(--slate-grey);
 }
