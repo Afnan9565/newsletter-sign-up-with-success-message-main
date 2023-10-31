@@ -49,18 +49,19 @@
         </div>
       </div>
 
-      <form action="" id="form">
-        <div class="form-item">
-          <label for="email" class="para">
-            <p>Email Address</p>
-            <p class="invalid-email hide" id="invalid-email">Valid Email Required</p>
-          </label>
-          <input type="email" name="email" id="email" placeholder="email@company.com">
-        </div>
-        <div class="form-item">
-          <button type="submit" class="submit" id = "submit">Subscribe to our monthly Newsletter</button>
+    <form class="form-holder">
+      <div class="form-item">
+        <label for="email" class="para">
+          <p>Email Address</p>
+          <p class="invalid-email hide" id="invalid-email">Valid Email Required</p>
+        </label>
+        <input type="email" name="email" id="email" placeholder="email@company.com">
       </div>
-      </form>
+      <div class="form-item">
+        <button type="submit" class="submit" id = "submit">Subscribe to our monthly Newsletter</button>
+    </div>
+    </form>
+    
     </div>
     <div class="action-image-holder">
       <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
@@ -69,7 +70,7 @@
   <div class="reaction hide">
     <img src="assets/images/icon-list.svg" class="reaction-img" alt="">
     <h1 class="head">Thanks for Subscribing!</h1>
-    <span class="para">A confirmation email has been sent to </span><span class="para strong" id="user-email">abc@example.com. </span><span class="para">Please open it and click the button inside to confirm your subscription</span>
+    <span class="para">A confirmation email has been sent to </span><span class="para strong" id="user-email"></span><span class="para">. Please open it and click the button inside to confirm your subscription</span>
     <button class="submit" id="dismiss">Dismiss Message</button>
   </div>
 </body>
