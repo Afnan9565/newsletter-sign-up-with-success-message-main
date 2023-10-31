@@ -5,6 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* Defining Variables */
 :root {
   --tomato: hsl(4, 100%, 67%);
   --slate-grey: hsl(234, 29%, 20%);
@@ -39,6 +40,11 @@ body {
   font-weight: 700;
   color: var(--charcoal-grey);
   margin-bottom: 2rem;
+}
+
+.reaction .head {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .action-text-holder {
@@ -84,17 +90,52 @@ label {
   border: 1px solid var(--grey) !important;
   border-radius: 0.4rem;
   margin-top: 0.2rem;
-  width: 70%;
+  width: 100%;
 }
 
-#submit {
+.submit {
   padding: 0.6rem 1.2rem;
   margin-top: 1.2rem;
   background-color: var(--charcoal-grey);
   color: white;
   border: none;
   border-radius: 0.4rem;
-  width: 70%;
+  width: 100%;
   height: 2.55rem;
   cursor: pointer;
+}
+
+.form-item label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.invalid-email {
+  color: var(--tomato);
+  display: flex;
+}
+
+.reaction {
+  /* height: 70%; */
+  width: 33%;
+  padding: 3rem;
+  background-color: white;
+  border-radius: 1.8rem;
+
+}
+
+.reaction-img {
+  height: 3rem;
+  width: 3rem;
+}
+
+
+
+/* General Styling */
+.hide {
+  display: none;
+}
+
+.strong {
+  color: var(--slate-grey);
 }
