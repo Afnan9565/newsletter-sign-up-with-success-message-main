@@ -27,12 +27,12 @@ body {
 .action {
   width: 65%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
   height: 80%;
   padding: 1rem;
   background-color: var(--white);
   border-radius: 1.8rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .head {
@@ -61,6 +61,14 @@ body {
   color: var(--grey);
   font-weight: 700;
   font-size: 0.8rem;
+}
+
+.mobile-img-holder img {
+  display: none;
+}
+
+.action-image-holder img {
+  display: block;
 }
 
 .list {
@@ -155,17 +163,34 @@ label {
 
 /* Responsiveness Starts */
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:414px) {
   .action {
     height: fit-content;
     width: 95%;
     grid-template-columns: 1fr;
+    padding: 0;
   }
 
   .action-image-holder img {
     display: none;
   }
-  .action-text-holder{
+
+  .action-text-holder {
+    padding: 0rem;
+  }
+
+  .mobile-img-holder img {
+    display: block;
+    width: 100%;
+  }
+  .actual-text{
     padding: 1rem;
+  }
+  body{
+    /* height: 100vh;
+    width: 100vh; */
+  }
+  .reaction{
+    width: 95%;
   }
 }
