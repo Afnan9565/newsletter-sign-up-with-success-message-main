@@ -144,10 +144,28 @@ label {
   color: var(--slate-grey);
 }
 
-.active{
-  background-color: rgba(255,98,87,0.2);
+.active {
+  background-color: rgba(255, 98, 87, 0.2);
   border: 1px solid var(--tomato);
 }
-.form-holder{
+
+.form-holder {
   margin-top: 2rem;
+}
+
+/* Responsiveness Starts */
+
+@media screen and (max-width:375px) {
+  .action {
+    height: fit-content;
+    width: 95%;
+    grid-template-columns: 1fr;
+  }
+
+  .action-image-holder img {
+    display: none;
+  }
+  .action-text-holder{
+    padding: 1rem;
+  }
 }
